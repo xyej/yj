@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+    </style>
+    <link rel="shortcut icon" href="images/ico.jpg"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/MyUserell.css"/>
+    <script src="js/common.js"></script>
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/MyUserell.js"></script>
+    <audio autoplay loop src="River Flows In You.mp3"></audio>
+    <script>
+        var z=2;
+        var timer=null;
+        var pic;
+//        $('.circulation_pic ul li a img:eq(2)').css('zIndex',6);
+        $('.circulation_pic ul li a img:eq(2)').css("zIndex",5);
+        $(function () {
+            $('.circulation_point ul li').on('click', function () {
+                $(this).css('backgroundColor','#DD5862').siblings('li').css('background','');
+                pic=$('.circulation_point ul li').index(this);
+//                alert(pic);
+                $('.circulation_pic ul li a img:eq('+pic+')').css('zIndex',z++);
+                $('.circulation_point ul').css('zIndex',z++);
+            });
+            /*$(".circulation_point ul").mouseleave(function () {
+                playNext();
+            });
+            playNext();
+            function playNext() {
+                var i=0;
+                timer = setInterval(function(){
+                    // for (var i = 0; i <4; i++) {
+                    // pic =$(".banner ol li").eq(0);//获取当前按钮的小标
+                    // console.log(pic);
+                    //              注意这里使用的是this当前的，不然总是获取到第一个按钮
+                    if(i<4){
+                        console.log(i);
+
+                        $(".circulation_pic ul li a img:eq("+i+")").css("zIndex",z++);
+                        $(".circulation_point ul").css("zIndex",z++);
+                        i++;
+                    }else{
+                        i=0;
+                        $(".circulation_pic ul li a img:eq("+i+")").css("zIndex",z++);
+                        $(".circulation_point ul").css("zIndex",z++);
+                        i++;
+                    }
+                    // }
+                },1000);*/
+//            };
+        });
+
+    </script>
+
+</head>
+<body>
+  <!--导航栏部分开始-->
+  <div class="nav">
+      <div class="nav-center w">
+          <i></i>
+          <ul>
+              <li><a href="../lqk-02/qikan.html">期刊</a></li>
+              <li><a href="../ldq-03/Index_2.html">单曲</a></li>
+              <li><a href="../lzl-04/专栏-落网.html">专栏</a></li>
+              <li><a href="../lhd-05/index.html">活动</a></li>
+              <li><a href="../lapp-06/luowang.html">APP</a></li>
+          </ul>
+          <input type="text"/>
+          <b></b>
+          <span>注册/登录</span>
+      </div>
+  </div>
+
+  <!--导航栏部分结束-->
+
+  <!--轮播图部分开始-->
+  <div class="circulation w">
+    <div class="circulation_pic">
+        <ul>
+            <li><a href="#"><img src="images/lunbo-1.jpg" /></a></li>
+            <li><a href="#"><img src="images/lunbo-2.jpg" /></a></li>
+            <li><a href="#"><img src="images/lunbo-3.jpg" /></a></li>
+            <li><a href="#"><img src="images/lunbo-4.jpg" /></a></li>
+            <li><a href="#"><img src="images/lunbo-5.jpg" /></a></li>
+        </ul>
+    </div>
+      <div class="circulation_point">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+      </div>
+  </div>
+  <!--轮播图部分结束-->
+
+
+  <!--音乐期刊部分开始-->
+    <div class="music w">
+        <div class="music_top">
+            <i></i>
+            <h3>音乐期刊</h3>
+            <ul>
+                <li><a href="#">独立音乐</a></li>
+                <li><a href="#">民谣</a></li>
+                <li><a href="#">金属</a></li>
+                <li><a href="#">电子</a></li>
+                <li><a href="#">流行</a></li>
+                <li><a href="#">英伦</a></li>
+                <li><a href="#">后摇</a></li>
+                <li><a href="#">暗潮</a></li>
+                <li><a href="#">迷幻</a></li>
+                <li><a href="#">氛围</a></li>
+                <li><a href="#">更多></a></li>
+            </ul>
+        </div>
+        <div class="music_center">
+            <div class="music_center_left fl">
+                <a href="#"><img src="images/music.jpg" alt=""/></a>
+                <span></span>
+                <div class="blackbu"></div>
+                <p>vol.846 说给你听</p>
+            </div>
+            <div class="music_center_right fr">
+                <a href="#"><img src="images/music2.jpg"/></a>
+                <span></span>
+                <div class="picback1"></div>
+                <p>vol.845 The L World</p>
+                <a href="#"><img src="images/music3.jpg" class="img2"/></a>
+                <p>vol.844 江湖</p>
+            </div>
+        </div>
+    </div>
+  <!--音乐期刊部分结束-->
+
+  <!--原创推荐部分开始-->
+  <div class="original w">
+      <div class="original_top">
+          <i></i>
+          <h3>原创推荐</h3>
+          <ul>
+              <li><a href="#">单曲</a></li>
+              <li><a href="#">专栏</a></li>
+              <li><a href="#">更多></a></li>
+          </ul>
+      </div>
+      <div class="original_but">
+          <div class="original_but_left fl">
+              <div class="original_but_left_top">
+                  <a href="#"><img src="images/circle.jpg" alt=""/></a>
+                  <p class="imp">双刀</p>
+                  <p>离合</p>
+                  <p class="imp2">2016-08-08</p>
+              </div>
+              <div class="original_but_left_but">
+                  &nbsp;&nbsp;&nbsp;&nbsp;从两个简单的分解和弦开始，闭上眼睛，似乎可以看到白色窗帘透过的阳光，《双合》是一首有气象的歌，晨的暖，夜的魅，似乎都能从细密的鼓点里捕捉到；《双合》是一首交合的诗，与过去，未来的交合、舍离、回归。不知道在歌手阿力普的音乐世界里，双合到底意味着什么，重要的是，听着这首歌的你，把“双合”注解成了什么。你还在吗？还是，你已经走了？
+              </div>
+          </div>
+          <div class="original_but_right fr">
+              <div class="original_but_right_left fl">
+                  <a href="#"><img src="images/jita.jpg" alt=""/></a>
+                  <p><a href="#">林生祥石化《围庄》下的《动身》</a></p>
+                  <p>燃烧</p>
+              </div>
+              <div class="original_but_right_right fr">
+                  <a href="#"><img src="images/people.jpg" alt=""/></a>
+                  <p><a href="#">林生祥石化《围庄》下的《动身》</a></p>
+                  <p>燃烧</p>
+              </div>
+          </div>
+      </div>
+
+  </div>
+  <!--原创推荐部分结束-->
+
+
+
+
+  <!--热门活动部分开始-->
+    <div class="hote w">
+        <div class="music_top">
+            <i></i>
+            <h3>热门活动</h3>
+            <ul>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">上海</a></li>
+                <li><a href="#">广州</a></li>
+                <li><a href="#">深圳</a></li>
+                <li><a href="#">武汉</a></li>
+                <li><a href="#">成都</a></li>
+                <li><a href="#">台湾</a></li>
+                <li><a href="#">香港</a></li>
+                <li><a href="#">更多></a></li>
+            </ul>
+        </div>
+        <div class="hote_but">
+            <div class="hote_but_pic fl">
+                <img src="images/pic1.jpg" alt=""/>
+                <p class="title"><a href="#">俄罗斯新古典后摇<br>Aesthesys2016中国巡演</a></p>
+                <p>时间：2016-09-24</p>
+                <p>地点：广州</p>
+                <p>场所：Tu凸空间</p>
+                <p>费用：90元 - 150元</p>
+            </div>
+
+            <div class="hote_but_pic fl">
+                <img src="images/pic2.jpg" alt=""/>
+                <p class="title"><a href="#">2016东海音乐节</a></p>
+                <p>时间：2016-09-09</p>
+                <p>地点：舟山</p>
+                <p>费用：150元 - 400元</p>
+            </div>
+
+            <div class="hote_but_pic fl">
+                <img src="images/pic3.jpg" alt=""/>
+                <p class="title"><a href="#">Sophie Zelmanni“乘<br>客归来”2016巡回演唱</a></p>
+                <p>时间：2016-08-28</p>
+                <p>地点：广州</p>
+                <p>场所：星海音乐厅</p>
+                <p>费用：100元 - 380元</p>
+            </div>
+
+            <div class="hote_but_pic fl">
+                <img src="images/pic4.jpg" alt=""/>
+                <p class="title"><a href="#">黄靖《你把什么秘密埋<br>在我们的未来》2016夏</a></p>
+                <p>时间：2016-07-30</p>
+                <p>地点：宁波</p>
+                <p>场所：灯塔音乐现场（江东区</p>
+                <p>费用：50元 - 70元</p>
+            </div>
+
+            <div class="hote_but_pic fl">
+                <img src="images/pic5.jpg" alt=""/>
+                <p class="title"><a href="#">《海上钢琴师》经典电<br>影钢琴曲天利名家浪漫</a></p>
+                <p>时间：2016-12-10</p>
+                <p>地点：成都</p>
+                <p>场所：娇子音乐厅</p>
+                <p>费用：120元 - 580元</p>
+            </div>
+
+            <div class="hote_but_pic fl">
+                <img src="images/pic6.jpg" alt=""/>
+                <p class="title"><a href="#">湖泊乐队全国大型巡演</a></p>
+                <p>时间：2016-12-10</p>
+                <p>地点：沈阳</p>
+                <p>场所：美帝奇音乐现场</p>
+                <p>费用：50元 - 60元</p>
+            </div>
+        </div>
+    </div>
+  <!--热门活动部分结束-->
+
+
+  <!--页面底部部分开始-->
+  <div class="lastButt">
+      <div class="lastButt_heat w">
+        <div class="lastButt_heat_text">
+            <ul>
+                <li class="imppp"><a href="#">关于</a></li>
+                <li><a href="#">关于落网</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">联系合作</a></li>
+                <li><a href="#">反馈建议</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+
+            <ul class="text2">
+                <p>APP</p>
+                <li class="jlpic1 logo"><i></i>for iPhone</li>
+                <li class="jlpic2 logo"><i></i>for Android</li>
+                <li class="jlpic3 logo"><i></i>for Windows Phone 8</li>
+            </ul>
+            <h4>关注落网</h4>
+            <div class="lastButt_heat_text_logo">
+                <a href="#" class="logo1"><span></span></a>
+                <a href="#" class="logo2"></a>
+                <a href="#" class="logo3"></a>
+                <a href="#" class="logo4"></a>
+            </div>
+            <p class="care">© 2016 落网</p>
+            <p class="lastpic"></p>
+        </div>
+      </div>
+
+  </div>
+  <!--页面底部部分结束-->
+
+
+
+  <!--隐藏盒子的实现-->
+  <div class="hidebox w">
+      <span></span>
+      <ul>
+          <li class="a"><a href="#">登录</a></li>
+          <li class="b"><a href="#">没有帐号？<i class="color">注册</i></a></li>
+      </ul>
+      <input type="text" value="邮箱" class="hideboxinp"/>
+      <input type="text" value="密码" class="hideboxinp"/>
+      <input type="button" value="登录" class="inp"/>
+      <input type="checkbox"/>下次自动登录
+      <a href="#" class="color">找回密码</a>
+      <div class="box-logo">
+          <div class="box-logo-three">
+              <i></i>
+              <b></b>
+              <s></s>
+          </div>
+      </div>
+  </div>
+  <!--隐藏盒子的实现-->
+</body>
+</html>
